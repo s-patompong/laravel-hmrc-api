@@ -1,0 +1,32 @@
+{
+    "name": "s-patompong/laravel-hmrc-api",
+    "type": "library",
+    "require": {
+        "php": "^7.1",
+        "s-patompong/hmrc-api-php": "^0.1.0"
+    },
+    "require-dev": {
+        "laravel/framework": "5.5.x",
+        "phpunit/phpunit": "^7.5"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Patompong Savaengsuk",
+            "email": "p.pangpond@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "autoload": {
+        "psr-4": {
+            "LaravelHMRC\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "LaravelHMRC\\ServiceProvider"
+            ]
+        }
+    }
+}
