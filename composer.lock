@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8f5ebf39e0e578e48b8f9e858b2e6b74",
+    "content-hash": "3a1d8da182f34634fa49889d56370806",
     "packages": [
         {
             "name": "guzzlehttp/guzzle",
@@ -393,16 +393,16 @@
         },
         {
             "name": "s-patompong/hmrc-api-php",
-            "version": "v0.2.0",
+            "version": "v0.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/s-patompong/hmrc-api-php.git",
-                "reference": "c0eea475c05358b05ed3b6841c336a2325410dfe"
+                "reference": "913755fe51b2c94703b0b7e888bd356213b41d4d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/s-patompong/hmrc-api-php/zipball/c0eea475c05358b05ed3b6841c336a2325410dfe",
-                "reference": "c0eea475c05358b05ed3b6841c336a2325410dfe",
+                "url": "https://api.github.com/repos/s-patompong/hmrc-api-php/zipball/913755fe51b2c94703b0b7e888bd356213b41d4d",
+                "reference": "913755fe51b2c94703b0b7e888bd356213b41d4d",
                 "shasum": ""
             },
             "require": {
@@ -426,7 +426,7 @@
                     "email": "p.pangpond@windowslive.com"
                 }
             ],
-            "time": "2019-01-30T09:35:35+00:00"
+            "time": "2019-01-30T10:15:31+00:00"
         }
     ],
     "packages-dev": [
