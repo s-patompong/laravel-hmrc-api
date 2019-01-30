@@ -5,6 +5,7 @@ namespace LaravelHMRC;
 
 
 use HMRC\Environment\Environment;
+use HMRC\ServerToken\ServerToken;
 use Illuminate\Support\ServiceProvider as LaravelServiceProvider;
 
 class ServiceProvider extends LaravelServiceProvider
@@ -30,6 +31,8 @@ class ServiceProvider extends LaravelServiceProvider
             Environment::getInstance()->setToSandbox();
         }
 
+        ServerToken::getInstance()->set(config('hmrc.server_token'));
+
         $this->app->singleton(LaravelHMRC::class, function ($app) {
             $clientId = config('hmrc.client_id');
             $clientSecret = config('hmrc.client_secret');
@@ -40,6 +43,10 @@ class ServiceProvider extends LaravelServiceProvider
 
         $this->app->singleton(Environment::class, function ($app) {
             return Environment::getInstance();
+        });
+
+        $this->app->singleton(ServerToken::class, function ($app) {
+            return ServerToken::getInstance();
         });
     }
 }
