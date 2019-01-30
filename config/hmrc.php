@@ -5,7 +5,7 @@ return [
      * Environment to use, set to true if you want to talk to HMRC Live and set to false to talk to HMRC sandbox
      */
 
-    'live_env' => true,
+    'live_env' => env('HMRC_LIVE_ENV', false),
 
     /**
      * Required: credentials setting
