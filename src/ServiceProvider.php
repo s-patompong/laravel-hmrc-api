@@ -37,5 +37,9 @@ class ServiceProvider extends LaravelServiceProvider
 
             return new LaravelHMRC($clientId, $clientSecret, $callbackURI);
         });
+
+        $this->app->singleton(Environment::class, function ($app) {
+            return Environment::getInstance();
+        });
     }
 }

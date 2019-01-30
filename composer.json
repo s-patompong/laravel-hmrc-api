@@ -3,7 +3,7 @@
     "type": "library",
     "require": {
         "php": "^7.1",
-        "s-patompong/hmrc-api-php": "^0.1.0"
+        "s-patompong/hmrc-api-php": "~0.1"
     },
     "require-dev": {
         "laravel/framework": "5.5.x",
