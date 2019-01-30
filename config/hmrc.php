@@ -2,6 +2,12 @@
 
 return [
     /**
+     * Environment to use, set to true if you want to talk to HMRC Live and set to false to talk to HMRC sandbox
+     */
+
+    'live_env' => true,
+
+    /**
      * Required: credentials setting
      */
     'client_id' => env('HMRC_CLIENT_ID'),

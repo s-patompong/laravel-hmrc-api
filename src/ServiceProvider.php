@@ -4,6 +4,7 @@
 namespace LaravelHMRC;
 
 
+use HMRC\Environment\Environment;
 use Illuminate\Support\ServiceProvider as LaravelServiceProvider;
 
 class ServiceProvider extends LaravelServiceProvider
@@ -22,6 +23,13 @@ class ServiceProvider extends LaravelServiceProvider
 
     public function register()
     {
+        $useLiveEnvironment = config('hmrc.live_env');
+        if($useLiveEnvironment) {
+            Environment::getInstance()->setToLive();
+        } else {
+            Environment::getInstance()->setToSandbox();
+        }
+
         $this->app->singleton(LaravelHMRC::class, function ($app) {
             $clientId = config('hmrc.client_id');
             $clientSecret = config('hmrc.client_secret');
