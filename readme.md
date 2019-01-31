@@ -1,4 +1,7 @@
-# laravel-hmrc-api
+# Laravel HMRC API
+This project is a Laravel wrapper for https://github.com/s-patompong/hmrc-api-php library.
+
+## How to install
 Install this library using composer require
 ```
 composer require s-patompong/laravel-hmrc-api
