@@ -18,7 +18,7 @@ HMRC_CALLBACK_URI=http://homestead.test/callback
 
 ## Dependencies injection
 This library utilize Laravel dependencies injection, this way you can initialize important classes without sending client id, client secret to it. For example:
-```
+```php
 <?php
 
 namespace App\Http\Controllers;
