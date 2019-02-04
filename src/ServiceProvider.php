@@ -29,7 +29,7 @@ class ServiceProvider extends LaravelServiceProvider
             Environment::getInstance()->setToSandbox();
         }
 
-        ServerToken::getInstance()->set(config('hmrc.server_token'));
+        ServerToken::getInstance()->set(config('hmrc.server_token') ?? '');
 
         $this->app->singleton(LaravelHMRC::class, function ($app) {
             $clientId = config('hmrc.client_id');
