@@ -13,7 +13,7 @@ class LaravelHMRCTest extends TestCase
      */
     public function it_can_be_initialized_and_provide_provider()
     {
-        $laravelHMRC = new LaravelHMRC("client_id", "client_secret", "callback_uri");
+        $laravelHMRC = new LaravelHMRC('client_id', 'client_secret', 'callback_uri');
 
         $this->assertInstanceOf(Provider::class, $laravelHMRC->getProvider());
     }

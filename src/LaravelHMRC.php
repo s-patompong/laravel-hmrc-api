@@ -1,8 +1,6 @@
 <?php
 
-
 namespace LaravelHMRC;
-
 
 use HMRC\Oauth2\Provider;
 
