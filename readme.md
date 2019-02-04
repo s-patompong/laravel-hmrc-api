@@ -1,4 +1,7 @@
 # Laravel HMRC API
+[![Build Status](https://travis-ci.com/s-patompong/laravel-hmrc-api.svg?branch=master)](https://travis-ci.com/s-patompong/laravel-hmrc-api)
+[![StyleCI](https://github.styleci.io/repos/168305320/shield?branch=master)](https://github.styleci.io/repos/168305320)
+
 This project is a Laravel wrapper for https://github.com/s-patompong/hmrc-api-php library.
 
 ## How to install
