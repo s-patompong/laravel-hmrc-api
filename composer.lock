@@ -393,16 +393,16 @@
         },
         {
             "name": "s-patompong/hmrc-api-php",
-            "version": "v1.0.0",
+            "version": "v1.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/s-patompong/hmrc-api-php.git",
-                "reference": "a847d9efdc5980ff0e8f8654a5590b55a0496785"
+                "reference": "e8f8fbba703e8d78674f4e6af98e72831da827f4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/s-patompong/hmrc-api-php/zipball/a847d9efdc5980ff0e8f8654a5590b55a0496785",
-                "reference": "a847d9efdc5980ff0e8f8654a5590b55a0496785",
+                "url": "https://api.github.com/repos/s-patompong/hmrc-api-php/zipball/e8f8fbba703e8d78674f4e6af98e72831da827f4",
+                "reference": "e8f8fbba703e8d78674f4e6af98e72831da827f4",
                 "shasum": ""
             },
             "require": {
@@ -426,7 +426,7 @@
                     "email": "p.pangpond@windowslive.com"
                 }
             ],
-            "time": "2019-02-04T07:33:53+00:00"
+            "time": "2019-02-04T09:43:28+00:00"
         }
     ],
     "packages-dev": [
