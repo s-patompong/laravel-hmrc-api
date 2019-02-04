@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit backupGlobals="false"
+         backupStaticAttributes="false"
+         beStrictAboutTestsThatDoNotTestAnything="false"
+         bootstrap="tests/bootstrap.php"
+         colors="true"
+         convertErrorsToExceptions="true"
+         convertNoticesToExceptions="true"
+         convertWarningsToExceptions="true"
+         processIsolation="false"
+         stopOnError="false"
+         stopOnFailure="false"
+         verbose="true"
+>
+    <testsuites>
+        <testsuite name="Laravel HMRC API Test Suite">
+            <directory suffix="Test.php">./tests</directory>
+        </testsuite>
+    </testsuites>
+    <php>
+        <env name="HMRC_LIVE_ENV" value="true" />
+        <env name="HMRC_CLIENT_ID" value="test_client_id" />
+        <env name="HMRC_CLIENT_SECRET" value="test_client_secret" />
+        <env name="HMRC_SERVER_TOKEN" value="test_server_token" />
+        <env name="HMRC_CALLBACK_URI" value="test_callback_uri" />
+    </php>
+</phpunit>

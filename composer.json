@@ -7,7 +7,7 @@
     },
     "require-dev": {
         "laravel/framework": "5.5.x",
-        "phpunit/phpunit": "^7.5"
+        "phpunit/phpunit": "7.5"
     },
     "license": "MIT",
     "authors": [
@@ -20,6 +20,11 @@
     "autoload": {
         "psr-4": {
             "LaravelHMRC\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "LaravelHMRC\\Test\\": "tests/"
         }
     },
     "extra": {
