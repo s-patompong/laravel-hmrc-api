@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "07d0e0ee208b60b6223f2d93c415d93e",
+    "content-hash": "6f8130cf20df533f4409f5f3c15d5c31",
     "packages": [
         {
             "name": "guzzlehttp/guzzle",
@@ -393,7 +393,7 @@
         },
         {
             "name": "s-patompong/hmrc-api-php",
-            "version": "v0.2.3",
+            "version": "v1.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/s-patompong/hmrc-api-php.git",
