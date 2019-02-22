@@ -22,7 +22,7 @@ class ServiceProvider extends LaravelServiceProvider
 
     public function register()
     {
-        $this->mergeConfigFrom(__DIR__."/../config/hmrc.php", 'hmrc');
+        $this->mergeConfigFrom(__DIR__.'/../config/hmrc.php', 'hmrc');
 
         $useLiveEnvironment = config('hmrc.live_env');
         if ($useLiveEnvironment) {
@@ -33,7 +33,7 @@ class ServiceProvider extends LaravelServiceProvider
 
         ServerToken::getInstance()->set(config('hmrc.server_token') ?? '');
 
-        $this->app->singleton(LaravelHMRC::class, function($app) {
+        $this->app->singleton(LaravelHMRC::class, function ($app) {
             $clientId = config('hmrc.client_id');
             $clientSecret = config('hmrc.client_secret');
             $callbackURI = config('hmrc.callback_uri');
@@ -41,11 +41,11 @@ class ServiceProvider extends LaravelServiceProvider
             return new LaravelHMRC($clientId, $clientSecret, $callbackURI);
         });
 
-        $this->app->singleton(Environment::class, function($app) {
+        $this->app->singleton(Environment::class, function ($app) {
             return Environment::getInstance();
         });
 
-        $this->app->singleton(ServerToken::class, function($app) {
+        $this->app->singleton(ServerToken::class, function ($app) {
             return ServerToken::getInstance();
         });
     }
