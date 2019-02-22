@@ -18,7 +18,6 @@
         </testsuite>
     </testsuites>
     <php>
-        <env name="HMRC_LIVE_ENV" value="true" />
         <env name="HMRC_CLIENT_ID" value="test_client_id" />
         <env name="HMRC_CLIENT_SECRET" value="test_client_secret" />
         <env name="HMRC_SERVER_TOKEN" value="test_server_token" />
