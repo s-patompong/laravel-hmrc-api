@@ -2,7 +2,7 @@
 <phpunit backupGlobals="false"
          backupStaticAttributes="false"
          beStrictAboutTestsThatDoNotTestAnything="false"
-         bootstrap="tests/bootstrap.php"
+         bootstrap="vendor/autoload.php"
          colors="true"
          convertErrorsToExceptions="true"
          convertNoticesToExceptions="true"
@@ -23,4 +23,16 @@
         <env name="HMRC_SERVER_TOKEN" value="test_server_token" />
         <env name="HMRC_CALLBACK_URI" value="test_callback_uri" />
     </php>
+    <filter>
+        <whitelist>
+            <directory suffix=".php">src/</directory>
+        </whitelist>
+    </filter>
+    <logging>
+        <log type="tap" target="build/report.tap"/>
+        <log type="junit" target="build/report.junit.xml"/>
+        <log type="coverage-text" target="build/coverage.txt"/>
+        <log type="coverage-html" target="build/html/"/>
+        <log type="coverage-clover" target="build/logs/cover.xml"/>
+    </logging>
 </phpunit>

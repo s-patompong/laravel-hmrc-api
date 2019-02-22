@@ -32,5 +32,8 @@
                 "LaravelHMRC\\ServiceProvider"
             ]
         }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit"
     }
 }
