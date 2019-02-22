@@ -9,7 +9,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Soon to be implemented.
 
 
-## [-] - [DATE]
-### Added
-- [Add something here]
+## [v1.0.8] - [2019-02-22]
+### Changed
+- Change non-important files name.
 
